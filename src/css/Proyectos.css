@@ -1,0 +1,79 @@
+.tituloproy{
+   color: #01fff4;
+	font-size: 30px;
+	font-weight: 800;
+	margin-top: 25px;
+
+}
+.subtitituloproy{
+	font-size: 20px ;
+}
+
+.icoproy{
+   font-size: 30px;
+color:#f4f4f7
+}
+.cardproy{
+	min-height: 350px!important;
+	margin-left: 10px;
+	background-color: #520ad0!important;
+	box-shadow: 5px 5px 5px 0px #01fff4!important;
+	-webkit-box-shadow: 5px 5px 5px 0px #01fff4;
+	-moz-box-shadow: 5px 5px 5px 0px #01fff4;
+}
+.cardproyect{
+	margin-left: 10px;
+	background-color: #520ad0!important;
+	box-shadow: 5px 5px 5px 0px #01fff4!important;
+	-webkit-box-shadow: 5px 5px 5px 0px #01fff4;
+	-moz-box-shadow: 5px 5px 5px 0px #01fff4;
+}
+.titulocard{
+	font-size: 22px!important;
+	text-align: center;
+	font-weight: 700;
+	color: #01fff4!important;
+	text-shadow: 7px 7px 5px rgba(6, 6, 6, 0.6);
+
+}
+.langproy{
+	background-color: #020041;
+	color: white;
+	font-size: 14px;
+	text-wrap: wrap;
+	border-radius: 10px;
+	border-color: #01fff4;
+	padding: 5px 10px;
+	margin-left: 5px;
+	margin-bottom: 7px;
+}
+.btnproy{
+	font-weight: 700;
+	font-size: 100%;
+	margin-top: 2vw !important;
+	margin-bottom: 2vw !important;
+	background-color: #520ad0;
+	color: rgb(207, 207, 207);
+	width: auto;
+	border-radius: 15px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+}
+.btnproy:hover {
+	opacity: 0.5;
+	color: #01fff4;
+	background-color: transparent;
+}
+.cardproxi{
+	width: 240px;
+	height: 350px!important;
+}
+.textproxi{
+	text-align: center;
+	font-size: 28px;
+	font-weight: 800;
+	color: #ffffff;
+
+}

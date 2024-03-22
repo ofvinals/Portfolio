@@ -1,0 +1,80 @@
+.backgroundheader {
+	background-color: #520ad0!important;
+}
+.containernavbar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center !important;
+	width: 100% !important;
+}
+.offcanvas-title {
+	font-size: 24px;
+	color: #01fff4!important;
+	font-weight: 700;
+	text-wrap: nowrap;
+	text-align: center;
+}
+.offcanvas-subtitle {
+	font-size: 20px;
+	color: #020041;
+	font-weight: 500;
+	text-wrap: nowrap;
+	text-align: center;
+}
+
+.botones {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.barranav {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.btnnav {
+	font-weight: 500;
+	font-size: 16px;
+	margin: 5px;
+	border: none;
+	background-color: transparent;
+	text-wrap: nowrap;
+	color: rgb(253, 251, 251);
+	width: 65% !important;
+	padding: 5px;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+}
+.btnnav:hover {
+	color: #01fff4;
+	text-decoration: underline!important;
+}
+
+@media (min-width: 575px) {
+	.containernavbar {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+
+@media (min-width: 1400px) {
+	.btnnav {
+		width: 100% !important;
+		margin: 5px;
+		display: flex !important;
+		flex-direction: column !important;
+		align-items: center;
+		text-wrap: nowrap;
+		justify-content: center;
+		padding: 5px !important;
+	}
+}

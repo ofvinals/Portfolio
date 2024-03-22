@@ -1,0 +1,56 @@
+.iconskill {
+	font-size: 40px !important;
+	color: #01fff4 !important;
+}
+.iconame {
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	margin-top: 10px;
+	color: white;
+}
+.icolearn {
+	font-size: 12px;
+	text-align: center;
+	color: white;
+}
+.tituloskill {
+	color: #01fff4;
+	font-size: 30px;
+	font-weight: 800;
+	margin-top: 4vw;
+}
+.subtitleskill {
+	display: inline-block;
+	color: #f7f6f8;
+	font-size: 20px;
+}
+.textskill {
+	color: #01fff4;
+	font-size: 26px;
+}
+.simbolskill {
+	color: #520ad0;
+}
+.cardskill {
+	border-radius: 25px !important;
+	background-color: #020041 !important;
+	border-color: #020041 !important;
+	box-shadow: 5px 5px 5px 0px #520ad0 !important;
+	-webkit-box-shadow: 5px 5px 5px 0px #520ad0;
+	-moz-box-shadow: 5px 5px 5px 0px #520ad0;
+}
+.cardskill:hover {
+	background-color: #520ad0 !important;
+	border-color: #01fff4 !important;
+}
+.doticon {
+	color: #f7f6f8;
+	margin-left: 10px;
+}
+.doticonx{
+   font-size: 60px;
+   font-weight: 800;
+   color: #f7f6f8;
+	margin-right: 10px;
+}

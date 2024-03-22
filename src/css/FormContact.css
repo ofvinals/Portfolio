@@ -1,0 +1,182 @@
+.linea {
+	background-color: rgb(207, 207, 207) !important;
+	height: 2px;
+}
+
+.bodycontact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-size: cover;
+	object-fit: cover;
+	background-position: center;
+	padding-bottom: 8vw;
+}
+.titulocont {
+	color: #01fff4;
+	font-size: 200%;
+	font-weight: 800;
+	margin-top: 4vw;
+}
+.Parrafo2 {
+	color: rgb(207, 207, 207);
+	font-size: 100%;
+	font-weight: 500;
+	padding: 2vw;
+	text-shadow: 2px 2px 2px rgba(6, 6, 6, 0.6);
+}
+.cajaForm {
+	display: flex !important;
+	flex-wrap: wrap;
+	width: 230px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #520ad0;
+	margin: 1px;
+	border-radius: 10px;
+	padding: 15px;
+	z-index: 1;
+}
+.labelcontact {
+	font-weight: 600;
+	text-align: center;
+	color: rgb(207, 207, 207);
+	font-size: 16px;
+	font-weight: 700;
+	margin: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	color: #01fff4 !important;
+}
+.inputcontactcoment {
+	font-size: 16px !important;
+	width: 200px;
+	border-radius: 7px;
+}
+.inputcontactemail {
+	font-size: 16px !important;
+	margin: 1vw;
+	border-radius: 7px;
+}
+.btncont {
+	font-weight: 700;
+	font-size: 16px;
+	margin-top: 10px !important;
+	margin-bottom: 10px !important;
+	background-color: #020041;
+	color: rgb(207, 207, 207);
+	width: auto;
+	border: none;
+	border-radius: 15px;
+	padding: 10px 25px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: #ffffff;
+}
+.btncont:hover {
+	opacity: 0.8;
+	color: #01fff4;
+	background-color: transparent;
+	border: 0.3vw outset #01fff4 !important;
+}
+.contform {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+}
+.contsocial {
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+	width: 100%;
+	align-items: center;
+	justify-content: space-around !important;
+}
+.iconsocial {
+	font-size: 40px;
+	margin-right: 10px;
+	color: #01fff4;
+}
+.iconsocial:hover {
+	color: #520ad0;
+	font-size: 60px;
+}
+.objeto {
+	margin-top: 50px;
+	background-color: #520ad0;
+	height: 40px;
+	width: 100%;
+}
+.positionobjeto {
+	position: absolute;
+	bottom: 70px;
+	left: 50%;
+	transform: translateX(-50%); /* Centra horizontalmente la imagen */
+}
+.positionobjeto img {
+	width: 250px;
+	max-width: 450px;
+	height: auto;
+}
+
+@media (min-width: 340px) {
+	.positionobjeto img {
+		width: 300px;
+	}
+}
+
+@media (min-width: 575px) {
+	.contform {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	.contsocial {
+		flex-direction: column;
+		width: 40%;
+	}
+	.objeto {
+		margin-top: 32px;
+		width: 40px;
+		height: 450px;
+	}
+	.contsocial {
+		height: 450px;
+	}
+	.positionobjeto {
+		bottom: 0px; /* Ajusta esta propiedad para controlar la posición vertical de la imagen */
+		left: 85px; /* Centra horizontalmente la imagen */
+		transform: translateX(32px);
+	}
+}
+
+@media (min-width: 764px) {
+	.objeto {
+		margin-top: 32px;
+		height: 480px;
+	}
+	.contsocial {
+		height: 450px;
+	}
+}
+@media (min-width: 950px) {
+	.objeto {
+		margin-top: 32px;
+		height: 520px;
+	}
+	.cajaForm {
+		width: 350px;
+	}
+	.positionobjeto img {
+		width: 450px!important;
+	}
+	.positionobjeto {
+		bottom: 10px; /* Ajusta esta propiedad para controlar la posición vertical de la imagen */
+		left: 36%; /* Centra horizontalmente la imagen */
+		transform: translateX(-55%);
+	}
+}
