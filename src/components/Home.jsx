@@ -51,7 +51,7 @@ export const Home = () => {
 			</div>
 			<div className='containerinfo' id='inicio'>
 				<div className='d-flex flex-column justify-content-center align-items-center'>
-					<img className='imgpersonal' src='/cv.png' alt='imagen' />
+					<img className='imgpersonal' src='/cv.jpg' alt='imagen' />
 				</div>
 
 				<div className='d-flex flex-column w-100 justify-content-center align-items-center'>
