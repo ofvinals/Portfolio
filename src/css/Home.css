@@ -39,8 +39,9 @@
 	border-radius: 15px;
 	margin-top: 40px !important;
 	margin-bottom: 2vw !important;
-	background-color: #520ad0;
-	color: rgb(207, 207, 207);
+	border: 0.3vw outset #01fff4 !important;
+	background-color: transparent;
+	color: #01fff4;
 	width: auto;
 	padding: 10px 25px;
 	cursor: pointer;
@@ -50,10 +51,9 @@
 }
 .btnCV:hover {
 	opacity: 0.8;
-	color: #01fff4;
-	border-radius: 15px;
-	background-color: transparent;
-	border: 0.3vw outset #01fff4 !important;
+	color: rgb(207, 207, 207);
+	background-color: #520ad0;
+	border: none!important;
 }
 .titulome {
 	color: #01fff4;
