@@ -2,7 +2,6 @@
 	background-color: rgb(207, 207, 207) !important;
 	height: 2px;
 }
-
 .bodycontact {
 	display: flex;
 	flex-direction: column;
@@ -11,11 +10,11 @@
 	background-size: cover;
 	object-fit: cover;
 	background-position: center;
-	padding-bottom: 8vw;
+	padding-bottom: 40px;
 }
 .titulocont {
 	color: #01fff4;
-	font-size: 200%;
+	font-size: 36px;
 	font-weight: 800;
 	margin-top: 4vw;
 }
@@ -98,9 +97,9 @@
 	justify-content: space-around !important;
 }
 .iconsocial {
-	font-size: 40px;
+	font-size: 40px !important;
 	margin-right: 10px;
-	color: #01fff4;
+	color: #01fff4 !important;
 }
 .iconsocial:hover {
 	color: #520ad0;
@@ -148,9 +147,9 @@
 		height: 450px;
 	}
 	.positionobjeto {
-		bottom: 0px; /* Ajusta esta propiedad para controlar la posición vertical de la imagen */
-		left: 85px; /* Centra horizontalmente la imagen */
-		transform: translateX(32px);
+		bottom: -10px; /* Ajusta esta propiedad para controlar la posición vertical de la imagen */
+		left: 10px; /* Centra horizontalmente la imagen */
+		transform: translateX(30px);
 	}
 }
 
@@ -162,7 +161,13 @@
 	.contsocial {
 		height: 450px;
 	}
+	.positionobjeto {
+		bottom: -10px;
+		left: 50px;
+		transform: translateX(30px);
+	}
 }
+
 @media (min-width: 950px) {
 	.objeto {
 		margin-top: 32px;
@@ -172,11 +177,18 @@
 		width: 350px;
 	}
 	.positionobjeto img {
-		width: 450px!important;
+		width: 450px !important;
 	}
 	.positionobjeto {
-		bottom: 10px; /* Ajusta esta propiedad para controlar la posición vertical de la imagen */
-		left: 36%; /* Centra horizontalmente la imagen */
-		transform: translateX(-55%);
+		bottom: 10px;
+		left: 110px;
+		transform: translateX(-32px);
+	}
+}
+@media (min-width: 1200px) {
+	.positionobjeto {
+		bottom: 10px;
+		left: 175px;
+		transform: translateX(-32px);
 	}
 }

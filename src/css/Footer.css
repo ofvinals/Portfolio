@@ -1,3 +1,10 @@
+.backgroundfooter {
+	background-image: url(/footer.png);
+	background-size:100% 120%; 
+	background-position: center center; 
+	background-repeat: no-repeat; 
+
+}
 .linea {
 	background-color: rgb(207, 207, 207);
    height: 2px;

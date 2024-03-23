@@ -1,16 +1,18 @@
 .backgroundheader {
-	background-color: #520ad0!important;
+	background-color: #520ad0;
+	display: flex!important;
+	justify-content: space-around!important;
 }
 .containernavbar {
-	display: flex;
+	display: flex!important;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center !important;
+	justify-content: space-around !important;
 	width: 100% !important;
 }
 .offcanvas-title {
 	font-size: 24px;
-	color: #01fff4!important;
+	color: #01fff4 !important;
 	font-weight: 700;
 	text-wrap: nowrap;
 	text-align: center;
@@ -33,8 +35,13 @@
 .barranav {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
+}
+.navbarcol{
+	display: flex!important;
+	justify-content: space-around!important;
+	align-items: center!important;
 }
 .btnnav {
 	font-weight: 500;
@@ -56,15 +63,16 @@
 }
 .btnnav:hover {
 	color: #01fff4;
-	text-decoration: underline!important;
+	text-decoration: underline !important;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 442px) {
 	.containernavbar {
 		flex-direction: row;
 		justify-content: space-around;
 	}
 }
+
 
 @media (min-width: 1400px) {
 	.btnnav {

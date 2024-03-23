@@ -1,79 +1,121 @@
-.tituloproy{
-   color: #01fff4;
-	font-size: 30px;
+.tituloproy {
+	color: #01fff4;
+	font-size: 36px;
 	font-weight: 800;
-	margin-top: 25px;
-
+	margin-top: 15px;
 }
-.subtitituloproy{
-	font-size: 20px ;
+.subtitituloproy {
+	font-size: 20px;
 }
-
-.icoproy{
-   font-size: 30px;
-color:#f4f4f7
+.pproy {
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+	text-wrap: wrap;
+	align-items: center;
 }
-.cardproy{
-	min-height: 350px!important;
-	margin-left: 10px;
-	background-color: #520ad0!important;
-	box-shadow: 5px 5px 5px 0px #01fff4!important;
+.icoproy {
+	font-size: 30px;
+	color: #f4f4f7;
+}
+.containerproy{
+max-width: 800px ;
+}
+.cardproy {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%!important;
+	box-shadow: 5px 5px 5px 0px #01fff4 !important;
 	-webkit-box-shadow: 5px 5px 5px 0px #01fff4;
 	-moz-box-shadow: 5px 5px 5px 0px #01fff4;
 }
-.cardproyect{
-	margin-left: 10px;
-	background-color: #520ad0!important;
-	box-shadow: 5px 5px 5px 0px #01fff4!important;
+.cardproyect {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: auto;
+	background-color: #520ad0 !important;
+	box-shadow: 5px 5px 5px 0px #01fff4 !important;
 	-webkit-box-shadow: 5px 5px 5px 0px #01fff4;
 	-moz-box-shadow: 5px 5px 5px 0px #01fff4;
 }
-.titulocard{
-	font-size: 22px!important;
+.titulocard {
+	font-size: 22px !important;
 	text-align: center;
-	font-weight: 700;
-	color: #01fff4!important;
+	font-weight: 800 !important;
+	color: #01fff4 !important;
 	text-shadow: 7px 7px 5px rgba(6, 6, 6, 0.6);
-
 }
-.langproy{
+.langproy {
 	background-color: #020041;
 	color: white;
-	font-size: 14px;
+	font-size: 12px;
 	text-wrap: wrap;
 	border-radius: 10px;
 	border-color: #01fff4;
 	padding: 5px 10px;
 	margin-left: 5px;
-	margin-bottom: 7px;
+	margin: 7px 7px;
 }
-.btnproy{
-	font-weight: 700;
-	font-size: 100%;
-	margin-top: 2vw !important;
-	margin-bottom: 2vw !important;
-	background-color: #520ad0;
-	color: rgb(207, 207, 207);
-	width: auto;
-	border-radius: 15px;
+.btnproy {
+	font-weight: 600;
+	font-size: 14px;
+	margin: 10px 5px;
+	background-color: #020041;
+	border-radius: 10px;
 	cursor: pointer;
 	text-align: center;
 	text-decoration: none;
+	padding: 5px 10px;
 	color: #ffffff;
 }
 .btnproy:hover {
 	opacity: 0.5;
-	color: #01fff4;
 	background-color: transparent;
 }
-.cardproxi{
+.cardproxi {
 	width: 240px;
-	height: 350px!important;
+	height: 350px !important;
+	max-height: 350pxx;
+	min-height: 350px !important;
+	margin-left: 10px;
+	background-color: #520ad0 !important;
+	box-shadow: 5px 5px 5px 0px #01fff4 !important;
+	-webkit-box-shadow: 5px 5px 5px 0px #01fff4;
+	-moz-box-shadow: 5px 5px 5px 0px #01fff4;
 }
-.textproxi{
+
+.textproxi {
 	text-align: center;
 	font-size: 28px;
 	font-weight: 800;
 	color: #ffffff;
+}
+.imgcardproy {
+	margin-top: 10px;
+	padding-left: 10px;
+	width: 200px !important;
+	height: 250px;
+}
+@keyframes slideInFromBottom {
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
 
+.slide-in-from-bottom {
+	animation: slideInFromBottom 1s ease forwards;
+}
+
+@media (min-width: 500px) {
+	.cardproy {
+flex-direction: row;
+	}
 }
