@@ -24,7 +24,7 @@ export const Header = ({ onMenuClick }) => {
 						</h1>
 						<h2 className='offcanvas-subtitle'>FullStack Developer JS</h2>
 					</div>
-					<Navbar.Toggle className='navbarcol' aria-controls='responsive-navbar-nav' />
+					<Navbar.Toggle aria-controls='responsive-navbar-nav' />
 					<Navbar.Collapse  id='responsive-navbar-nav'>
 						<Nav className='me-auto barranav'>
 						<button
