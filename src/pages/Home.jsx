@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { Proyectos } from './Proyectos';
@@ -55,7 +55,7 @@ export const Home = () => {
 				</div>
 
 				<div className='d-flex flex-column w-100 justify-content-center align-items-center'>
-					<a href='/cv.pdf' download>
+					<a href='/cvpdf.pdf' download>
 						<button className='btnCV'>Descarga mi CV</button>
 					</a>
 				</div>
@@ -89,7 +89,7 @@ export const Home = () => {
 					compañeros de equipo. Mi objetivo es siempre ofrecer productos de
 					alta calidad que no solo cumplan, sino que también superen las
 					expectativas de los clientes y usuarios finales. Cuando no estoy
-					codificando, disfruto de la practica de yoga, la naturaleza, la
+					codificando, disfruto de la practica de Yoga, la naturaleza, la
 					música y pasar tiempo al aire libre. Siempre estoy abierto a
 					nuevas oportunidades y colaboraciones, ¡así que no dudes en
 					ponerte en contacto conmigo! ¡Gracias por visitar mi portafolio y

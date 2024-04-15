@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-evenly!important;
 }
 .offcanvas-title {
 	font-size: 24px;
@@ -61,11 +61,18 @@
 
 @media (min-width: 442px) {
 	.containernavbar {
-		flex-direction: row;
-		justify-content: space-around;
+		flex-direction: row!important;
+		justify-content: space-evenly!important;
 	}
 }
-
+@media (min-width: 992px) {
+	.barranav{
+		justify-content: space-evenly!important;
+		align-items: center;
+		align-content: center;
+		align-self: center;
+	}
+}
 @media (min-width: 1400px) {
 	.btnnav {
 		width: 100% !important;

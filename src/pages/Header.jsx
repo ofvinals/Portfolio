@@ -1,4 +1,3 @@
-import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,7 +8,7 @@ export const Header = ({ onMenuClick }) => {
 	return (
 		<>
 			<Navbar className='backgroundheader' collapseOnSelect expand='lg'>
-				<Container className=' containernavbar'>
+				<Container className='containernavbar'>
 					<Navbar.Brand href='#home'>
 						<img
 							className='ms-3'
@@ -25,8 +24,8 @@ export const Header = ({ onMenuClick }) => {
 						<h2 className='offcanvas-subtitle'>FullStack Developer JS</h2>
 					</div>
 					<Navbar.Toggle aria-controls='responsive-navbar-nav' />
-					<Navbar.Collapse  id='responsive-navbar-nav'>
-						<Nav className='me-auto barranav'>
+					<Navbar.Collapse  id='responsive-navbar-nav' className='barranav'>
+						<Nav className='barranav'>
 						<button
 									className='btnnav'
 									onClick={() => onMenuClick('inicio')}>

@@ -1,5 +1,7 @@
-import React, {useEffect} from 'react';
+import { useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
+import { TbBrandTailwind } from "react-icons/tb";
+
 import '../css/Skills.css';
 
 export const Skills = () => {
@@ -58,7 +60,7 @@ export const Skills = () => {
 					</div>
 				</div>
 
-				<div className='d-flex flex-row flex-wrap justify-content-around animate-on-scroll animate-from-right'>
+				<div className='d-flex flex-row flex-wrap justify-content-evenly animate-on-scroll animate-from-right'>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill fa-brands fa-html5'></i>{' '}
@@ -92,17 +94,11 @@ export const Skills = () => {
 					<i className='doticonx fa-solid fa-xmark'></i>
 				</div>
 
-				<div className='d-flex flex-row flex-wrap justify-content-around animate-on-scroll animate-from-left'>
+				<div className='d-flex flex-row flex-wrap justify-content-evenly animate-on-scroll animate-from-left'>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill fa-brands fa-react'></i>
 							<p className='iconame'>ReactJS</p>
-						</Card.Body>
-					</Card>
-					<Card style={{ width: '6rem' }} className='cardskill m-2'>
-						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
-							<i className='iconskill devicon-vitejs-plain'></i>
-							<p className='iconame'>ViteJS</p>
 						</Card.Body>
 					</Card>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
@@ -138,7 +134,7 @@ export const Skills = () => {
 					</div>
 				</div>
 
-				<div className='d-flex flex-row flex-wrap justify-content-around animate-on-scroll animate-from-right'>
+				<div className='d-flex flex-row flex-wrap justify-content-evenly animate-on-scroll animate-from-right'>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill devicon-firebase-plain'></i>
@@ -149,12 +145,6 @@ export const Skills = () => {
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill devicon-express-original'></i>
 							<p className='iconame'>Express</p>
-						</Card.Body>
-					</Card>
-					<Card style={{ width: '6rem' }} className='cardskill m-2'>
-						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
-							<i className='iconskill devicon-mongoose-original'></i>
-							<p className='iconame'>Moongose</p>
 						</Card.Body>
 					</Card>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
@@ -173,7 +163,7 @@ export const Skills = () => {
 					</h2>
 					<i className='doticonx fa-solid fa-xmark'></i>
 				</div>
-				<div className='d-flex flex-row flex-wrap justify-content-around animate-on-scroll animate-from-left'>
+				<div className='d-flex flex-row flex-wrap justify-content-evenly animate-on-scroll animate-from-left'>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill devicon-mongodb-plain'></i>
@@ -199,7 +189,7 @@ export const Skills = () => {
 						<i className=' doticon fa-solid fa-circle'></i>
 					</div>
 				</div>
-				<div className='d-flex flex-row flex-wrap justify-content-around animate-on-scroll animate-from-right'>
+				<div className='d-flex flex-row flex-wrap justify-content-evenly animate-on-scroll animate-from-right'>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill devicon-git-plain'></i>
@@ -237,13 +227,7 @@ export const Skills = () => {
 					<i className='doticonx fa-solid fa-xmark'></i>
 				</div>
 
-				<div className='d-flex flex-row flex-wrap justify-content-around animate-on-scroll animate-from-left'>
-					<Card style={{ width: '6rem' }} className='cardskill m-2'>
-						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
-							<i className='iconskill devicon-bootstrap-plain-wordmark'></i>
-							<p className='iconame'>Bootstrap</p>
-						</Card.Body>
-					</Card>
+				<div className='d-flex flex-row flex-wrap justify-content-evenly animate-on-scroll animate-from-left'>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill devicon-materialui-plain'></i>
@@ -260,6 +244,12 @@ export const Skills = () => {
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill devicon-reactbootstrap-original'></i>
 							<p className='iconame'>React Boostrap</p>
+						</Card.Body>
+					</Card>
+					<Card style={{ width: '6rem' }} className='cardskill m-2'>
+						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
+						<TbBrandTailwind className='iconskill'/>
+							<p className='iconame'>Tailwind CSS</p>
 						</Card.Body>
 					</Card>
 				</div>

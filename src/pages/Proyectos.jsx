@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import '../css/Proyectos.css';
 
@@ -53,7 +53,7 @@ export const Proyectos = () => {
 					<div className='cardproy'>
 						<div className='d-flex justify-content-center align-items-center'>
 							<img
-								className='imgcardproy mx-auto'
+								className='imgcardproy mx-auto mb-3'
 								src='/depelis.png'
 								alt='rollingcode'
 							/>
@@ -73,7 +73,7 @@ export const Proyectos = () => {
 								</a>
 								<a
 									className='btnproy d-flex flex-row align-items-center justify-content-center text-decoration-none'
-									href='#'
+									href='https://laclaqueta.netlify.app/'
 									target='_blank'>
 									<i className='icoproy fa-brands fa-chrome me-2'></i>
 									<span className='text-white'>Prueba</span>
@@ -96,7 +96,7 @@ export const Proyectos = () => {
 					<div className='cardproy'>
 						<div className='d-flex justify-content-center align-items-center '>
 							<img
-								className='imgcardproy mx-auto'
+								className='imgcardproy mx-auto mb-3'
 								src='/estudio.png'
 								alt='estudio posse'
 							/>
@@ -117,7 +117,7 @@ export const Proyectos = () => {
 								</a>
 								<a
 									className='btnproy d-flex flex-row align-items-center text-decoration-none'
-									href='#'
+									href='https://estudioposse.netlify.app'
 									target='_blank'>
 									<i className='icoproy fa-brands fa-chrome me-2'></i>
 									<span className='text-white'>Prueba</span>
@@ -128,7 +128,6 @@ export const Proyectos = () => {
 					<div className='cardproyect'>
 						<button className='langproy'>ReactJS</button>
 						<button className='langproy'>CSS</button>
-						<button className='langproy'>Javascript</button>
 						<button className='langproy'>FireBase</button>
 						<button className='langproy'>Material UI</button>
 						<button className='langproy'>Express</button>
@@ -142,7 +141,7 @@ export const Proyectos = () => {
 					<div className='cardproy'>
 						<div className='d-flex justify-content-center align-items-center '>
 							<img
-								className='imgcardproy mx-auto'
+								className='imgcardproy mx-auto mb-3'
 								src='/powergym.png'
 								alt='power gym'
 							/>
@@ -163,7 +162,7 @@ export const Proyectos = () => {
 								</a>
 								<a
 									className='btnproy d-flex flex-row align-items-center text-decoration-none'
-									href='#'
+									href='https://powergymtuc.netlify.app'
 									target='_blank'>
 									<i className='icoproy fa-brands fa-chrome me-2'></i>
 									<span className='text-white'>Prueba</span>
@@ -174,7 +173,6 @@ export const Proyectos = () => {
 					<div className='cardproyect'>
 						<button className='langproy'>ReactJS</button>
 						<button className='langproy'>CSS</button>
-						<button className='langproy'>Javascript</button>
 						<button className='langproy'>MongoDB</button>
 						<button className='langproy'>Material UI</button>
 						<button className='langproy'>Moongose</button>
@@ -188,7 +186,7 @@ export const Proyectos = () => {
 					<div className='cardproy'>
 						<div className='d-flex justify-content-center align-items-center '>
 							<img
-								className='imgcardproy mx-auto'
+								className='imgcardproy mx-auto mb-3'
 								src='/portfolio.png'
 								alt='portfolio'
 							/>
@@ -217,7 +215,51 @@ export const Proyectos = () => {
 				</div>
 			</div>
 
-			<div className='mt-5 d-flex justify-content-center animate-on-scroll animate-from-right'>
+			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center'>
+				<div className='containerproy ms-2 mt-5 animate-on-scroll animate-from-right'>
+					<h4 className='titulocard pt-3'>Market Artesanias</h4>
+					<div className='cardproy'>
+						<div className='d-flex justify-content-center align-items-center '>
+							<img
+								className='imgcardproy mx-auto mb-3'
+								src='/marketartesanias.png'
+								alt='market artesanias'
+							/>
+						</div>
+						<div className='d-flex flex-wrap flex-row justify-content-evenly'>
+							<p className='text-white text-center pproy'>
+								Marketplace de productos de artesanias realizado en el marco de una simulacion laboral (No Country). Compra-venta de productos artesanales . Sistema de pago
+								online.
+							</p>
+							<div className=' d-flex flex-row justify-content-around'>
+								<a
+									className='btnproy d-flex flex-row align-items-center text-decoration-none'
+									href='https://github.com/No-Country/c17-14-t-node-react'
+									target='_blank'>
+									<i className='icoproy fa-brands fa-square-github me-2'></i>
+									<span className='text-white'>Codigo</span>
+								</a>
+								<a
+									className='btnproy d-flex flex-row align-items-center text-decoration-none'
+									href='#'
+									target='_blank'>
+									<i className='icoproy fa-brands fa-chrome me-2'></i>
+									<span className='text-white'>Prueba</span>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div className='cardproyect'>
+						<button className='langproy'>ReactJS</button>
+						<button className='langproy'>TailwindCSS</button>
+						<button className='langproy'>Redux</button>
+						<button className='langproy'>Postgres</button>
+						<button className='langproy'>Material UI</button>
+					</div>
+				</div>
+			</div>
+
+			<div className='mt-5 d-flex justify-content-center'>
 				<Card
 					style={{ width: '15rem' }}
 					className=' cardproxi animate-on-scroll animate-from-bottom'>
