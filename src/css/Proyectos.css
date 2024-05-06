@@ -20,6 +20,7 @@
 }
 .containerproy{
 max-width: 800px ;
+margin: 0px 10px 
 }
 .cardproy {
 	display: flex;
@@ -71,6 +72,7 @@ max-width: 800px ;
 	padding: 5px 10px;
 	color: #ffffff;
 }
+
 .btnproy:hover {
 	opacity: 0.5;
 	background-color: transparent;
@@ -96,9 +98,10 @@ max-width: 800px ;
 .imgcardproy {
 	margin-top: 10px;
 	padding-left: 10px;
-	width: 200px !important;
+	width: 400px !important;
 	height: 250px;
 }
+
 @keyframes slideFromBottom {
 	0% {
 		transform: translateX(100%);

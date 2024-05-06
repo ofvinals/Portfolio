@@ -77,7 +77,7 @@ export const Skills = () => {
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill devicon-typescript-plain'></i>
 							<p className='iconame'>TypeScript</p>
-							<p className='icolearn'>Learning...</p>
+							<p className='icolearn text-center mt-1'>Learning...</p>
 						</Card.Body>
 					</Card>
 				</div>
@@ -105,14 +105,14 @@ export const Skills = () => {
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill devicon-nextjs-original-wordmark'></i>
 							<p className='iconame'>NextJS</p>
-							<p className='icolearn'>Learning...</p>
+							<p className='icolearn mt-1'>Learning...</p>
 						</Card.Body>
 					</Card>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill fa-brands fa-react'></i>
 							<p className='iconame'>React Native</p>
-							<p className='icolearn'>Learning...</p>
+							<p className='icolearn mt-1'>Learning...</p>
 						</Card.Body>
 					</Card>
 				</div>

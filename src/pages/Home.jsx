@@ -49,14 +49,14 @@ export const Home = () => {
 					{subtitleText.slice(0, subtitleIndex)}
 				</p>
 			</div>
+
 			<div className='containerinfo' id='inicio'>
 				<div className='d-flex flex-column justify-content-center align-items-center'>
 					<img className='imgpersonal' src='/cv.jpg' alt='imagen' />
 				</div>
-
-				<div className='d-flex flex-column w-100 justify-content-center align-items-center'>
+				<div className='flex flex-column w-100 justify-content-center align-items-center'>
 					<a href='/cvpdf.pdf' download>
-						<button className='btnCV'>Descarga mi CV</button>
+						<button className='btnCV bg-red'>Descarga mi CV</button>
 					</a>
 				</div>
 			</div>
@@ -69,7 +69,7 @@ export const Home = () => {
 				<h1 className='text-center titulome'>
 					&lt;<span className='text-white'> SOBRE MI </span>&gt;
 				</h1>
-				<p className='text-white text-center mx-3'>
+				<p className='text-white text-center mx-4 my-5'>
 					¡Hola! Mi nombre es Oscar, y soy un apasionado desarrollador
 					FullStack con experiencia en la creación de aplicaciones web .
 					Desde chico descubrí mi amor por la computacion, pero desde hace

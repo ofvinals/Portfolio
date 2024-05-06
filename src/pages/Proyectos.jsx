@@ -1,43 +1,7 @@
-import  { useEffect } from 'react';
 import Card from 'react-bootstrap/Card';
 import '../css/Proyectos.css';
 
 export const Proyectos = () => {
-	useEffect(() => {
-	function animateOnScroll() {
-		const elements = document.querySelectorAll('.animate-on-scroll');
-
-		function isInViewport(element) {
-			const rect = element.getBoundingClientRect();
-			return (
-				rect.top >= 0 &&
-				rect.left >= 0 &&
-				rect.bottom <=
-					(window.innerHeight ||
-						document.documentElement.clientHeight) &&
-				rect.right <=
-					(window.innerWidth || document.documentElement.clientWidth)
-			);
-		}
-		elements.forEach((element) => {
-			if (isInViewport(element)) {
-				// Si el elemento está en el viewport, agrega la clase de animación correspondiente
-				if (element.classList.contains('animate-from-left')) {
-					element.classList.add('animated-slide-from-left');
-				} else if (element.classList.contains('animate-from-right')) {
-					element.classList.add('animated-slide-from-right');
-				}
-			} else {
-				// Si el elemento no está en el viewport, elimina la clase de animación
-				element.classList.remove('animated-slide-from-left');
-				element.classList.remove('animated-slide-from-right');
-			}
-		});
-	}
-	window.addEventListener('scroll', animateOnScroll);
-	animateOnScroll();
-}, []);
-
 	return (
 		<div className='container-fluid my-5 background' id='proyectos'>
 			<hr className='linea mx-3' />
@@ -47,8 +11,9 @@ export const Proyectos = () => {
 			<p className='subtitituloproy text-center text-white pt-4'>
 				Estos son algunos de los proyectos que he realizado.
 			</p>
-			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center'>
-				<div className='containerproy ms-2 mt-5 animate-on-scroll animate-from-right'>
+
+			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center transform transition duration-300 hover:scale-105'>
+				<div className='containerproy ms-2 mt-5 '>
 					<h4 className='titulocard pt-3'>Rolling Movies</h4>
 					<div className='cardproy'>
 						<div className='d-flex justify-content-center align-items-center'>
@@ -58,7 +23,8 @@ export const Proyectos = () => {
 								alt='rollingcode'
 							/>
 						</div>
-						<div className='d-flex flex-wrap flex-row justify-content-evenly'>
+
+						<div className='d-flex flex-wrap flex-row justify-evenly'>
 							<p className='text-white text-center pproy'>
 								Web Streaming de peliculas y series, utilizando HTML ,
 								Bootstrap y JavaScript.
@@ -81,17 +47,17 @@ export const Proyectos = () => {
 							</div>
 						</div>
 					</div>
-					<div className='cardproyect '>
-						<button className='langproy'>HTML</button>
-						<button className='langproy'>CSS</button>
-						<button className='langproy'>Bootstrap</button>
-						<button className='langproy'>JavaScript</button>
-					</div>
+					<ul className='cardproyect '>
+						<li className='langproy'>HTML</li>
+						<li className='langproy'>CSS</li>
+						<li className='langproy'>Bootstrap</li>
+						<li className='langproy'>JavaScript</li>
+					</ul>
 				</div>
 			</div>
 
-			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center'>
-				<div className='containerproy ms-2 mt-5 animate-on-scroll animate-from-right'>
+			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center transform transition duration-300 hover:scale-105'>
+				<div className='containerproy ms-2 mt-5 '>
 					<h4 className='titulocard pt-3'>Estudio Juridico Posse</h4>
 					<div className='cardproy'>
 						<div className='d-flex justify-content-center align-items-center '>
@@ -105,19 +71,19 @@ export const Proyectos = () => {
 							<p className='text-white text-center pproy'>
 								Web para estudio juridico. Manejo de usuarios,
 								expedientes judiciales y gestion de gastos (CRUD).
-								Sistema de turnos online.
+								Sistema de turnos online. Google Calendar
 							</p>
 							<div className=' d-flex flex-row justify-content-around'>
 								<a
 									className='btnproy d-flex flex-row align-items-center text-decoration-none'
-									href='https://github.com/ofvinals/Proyecto-Estudio-MongoDB'
+									href='https://github.com/ofvinals/Proyecto-Estudio-Mongo'
 									target='_blank'>
 									<i className='icoproy fa-brands fa-square-github me-2'></i>
 									<span className='text-white'>Codigo</span>
 								</a>
 								<a
 									className='btnproy d-flex flex-row align-items-center text-decoration-none'
-									href='https://estudioposse.netlify.app'
+									href='https://proyecto-estudio-mongo.vercel.app/'
 									target='_blank'>
 									<i className='icoproy fa-brands fa-chrome me-2'></i>
 									<span className='text-white'>Prueba</span>
@@ -135,8 +101,8 @@ export const Proyectos = () => {
 				</div>
 			</div>
 
-			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center'>
-				<div className='containerproy ms-2 mt-5 animate-on-scroll animate-from-right'>
+			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center transform transition duration-300 hover:scale-105'>
+				<div className='containerproy ms-2 mt-5 '>
 					<h4 className='titulocard pt-3'>Power Fitness GYM</h4>
 					<div className='cardproy'>
 						<div className='d-flex justify-content-center align-items-center '>
@@ -155,7 +121,7 @@ export const Proyectos = () => {
 							<div className=' d-flex flex-row justify-content-around'>
 								<a
 									className='btnproy d-flex flex-row align-items-center text-decoration-none'
-									href='https://github.com/PabloPetroni/PowerGym-Front'
+									href='https://github.com/ofvinals/PowerGym-Front'
 									target='_blank'>
 									<i className='icoproy fa-brands fa-square-github me-2'></i>
 									<span className='text-white'>Codigo</span>
@@ -180,8 +146,8 @@ export const Proyectos = () => {
 				</div>
 			</div>
 
-			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center'>
-				<div className='containerproy ms-2 mt-5 animate-on-scroll animate-from-right'>
+			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center transform transition duration-300 hover:scale-105'>
+				<div className='containerproy ms-2 mt-5 '>
 					<h4 className='titulocard pt-3'>Portfolio</h4>
 					<div className='cardproy'>
 						<div className='d-flex justify-content-center align-items-center '>
@@ -215,8 +181,8 @@ export const Proyectos = () => {
 				</div>
 			</div>
 
-			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center'>
-				<div className='containerproy ms-2 mt-5 animate-on-scroll animate-from-right'>
+			<div className='d-flex flex-row flex-wrap justify-content-around align-items-center transform transition duration-300 hover:scale-105'>
+				<div className='containerproy ms-2 mt-5 '>
 					<h4 className='titulocard pt-3'>Market Artesanias</h4>
 					<div className='cardproy'>
 						<div className='d-flex justify-content-center align-items-center '>
@@ -228,20 +194,22 @@ export const Proyectos = () => {
 						</div>
 						<div className='d-flex flex-wrap flex-row justify-content-evenly'>
 							<p className='text-white text-center pproy'>
-								Marketplace de productos de artesanias realizado en el marco de una simulacion laboral (No Country). Compra-venta de productos artesanales . Sistema de pago
+								Marketplace de productos de artesanias realizado en el
+								marco de una simulacion laboral (No Country).
+								Compra-venta de productos artesanales . Sistema de pago
 								online.
 							</p>
 							<div className=' d-flex flex-row justify-content-around'>
 								<a
 									className='btnproy d-flex flex-row align-items-center text-decoration-none'
-									href='https://github.com/No-Country/c17-14-t-node-react'
+									href='https://github.com/ofvinals/Market-Artesanias'
 									target='_blank'>
 									<i className='icoproy fa-brands fa-square-github me-2'></i>
 									<span className='text-white'>Codigo</span>
 								</a>
 								<a
 									className='btnproy d-flex flex-row align-items-center text-decoration-none'
-									href='#'
+									href='https://market-artesanias.vercel.app/'
 									target='_blank'>
 									<i className='icoproy fa-brands fa-chrome me-2'></i>
 									<span className='text-white'>Prueba</span>
@@ -259,7 +227,7 @@ export const Proyectos = () => {
 				</div>
 			</div>
 
-			<div className='mt-5 d-flex justify-content-center'>
+			<div className='mt-5 d-flex justify-content-center transform transition duration-300 hover:scale-105'>
 				<Card
 					style={{ width: '15rem' }}
 					className=' cardproxi animate-on-scroll animate-from-bottom'>
