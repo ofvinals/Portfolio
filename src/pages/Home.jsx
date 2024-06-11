@@ -5,6 +5,7 @@ import { Proyectos } from './Proyectos';
 import { Skills } from './Skills';
 import '../css/Home.css';
 import { FormContact } from './FormContact';
+import { Typewriter } from 'react-simple-typewriter';
 
 export const Home = () => {
 	const [nameIndex, setNameIndex] = useState(0);
@@ -42,11 +43,19 @@ export const Home = () => {
 			<Header onMenuClick={scrollToSection} />
 			<div className='d-flex flex-column justify-content-around align-items-center '>
 				<h1 id='title-info' className='title-info'>
-					Hola, Soy{' '}
-					<span className='homename'>{nameText.slice(0, nameIndex)} </span>
+					Hola, soy Oscar Frias Viñals
 				</h1>
-				<p id='subtitle-info' className='subtitle-info text-white'>
-					{subtitleText.slice(0, subtitleIndex)}
+				<p className='subtitle-info text-white'>
+					<Typewriter
+						words={[
+							'Fullstack DeveloperJS',
+							'React Developer',
+							'Junior Developer',
+						]}
+						loop={0}
+						typeSpeed={50}
+						cursor={true}
+					/>
 				</p>
 			</div>
 
