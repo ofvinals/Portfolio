@@ -1,6 +1,6 @@
 import '../css/Footer.css';
 
-export const Footer = ({ onMenuClick }) => {
+export const Footer = ({ onMenuClick, language }) => {
 	return (
 		<div className='backgroundfooter'>
 			<hr className='linea mx-3' />
@@ -17,22 +17,21 @@ export const Footer = ({ onMenuClick }) => {
 						<li className='text-deg nav-item'>
 							<button
 								onClick={() => onMenuClick('sobre-mi')}
-								className='nav-link text-deg'>
-								Sobre Mi
+								className='nav-link text-deg'>{language === 'es' ? 'Sobre Mi' : 'About'}
 							</button>
 						</li>
 						<li className='text-deg nav-item'>
 							<button
 								onClick={() => onMenuClick('contacto')}
 								className='nav-link text-deg'>
-								Contacto
+							{language === 'es' ? 'Contacto' : 'Contact'}
 							</button>
 						</li>
 						<li className='text-deg nav-item'>
 							<button
 								onClick={() => onMenuClick('proyectos')}
 								className='nav-link text-deg'>
-								Proyectos
+								{language === 'es' ? 'Proyectos' : 'Proyects'}
 							</button>
 						</li>
 					</ul>
@@ -58,10 +57,11 @@ export const Footer = ({ onMenuClick }) => {
 							/>
 						</a>
 						<p className='text-center derechos'>
-							© 2024 Todos los Derechos Reservados
+						{language === 'es' ? '© 2024 Todos los Derechos Reservados' : '© 2024 All Rights Reserved'}
 						</p>
 						<p className='text-center derechos pb-3'>
-							Diseño y Desarrollo: Oscar Frias Viñals
+						{language === 'es' ? 'Diseño y Desarrollo: ' : 'Design and Development: '}
+						 Oscar Frias Viñals
 						</p>
 						`
 					</div>

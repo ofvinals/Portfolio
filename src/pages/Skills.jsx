@@ -204,12 +204,6 @@ export const Skills = () => {
 					</Card>
 					<Card style={{ width: '6rem' }} className='cardskill m-2'>
 						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
-							<i className='iconskill devicon-slack-plain'></i>
-							<p className='iconame'>Slack</p>
-						</Card.Body>
-					</Card>
-					<Card style={{ width: '6rem' }} className='cardskill m-2'>
-						<Card.Body className='cardskill d-flex flex-column justify-content-center align-items-center'>
 							<i className='iconskill devicon-trello-plain'></i>
 							<p className='iconame'>Trello</p>
 						</Card.Body>

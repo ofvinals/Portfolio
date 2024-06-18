@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import '../css/FormContact.css';
 import { useRef } from 'react';
 
-export const FormContact = () => {
+export const FormContact = ({ language }) => {
 	const form = useRef();
 
 	const sendEmail = (e) => {
@@ -20,7 +21,10 @@ export const FormContact = () => {
 				() => {
 					Swal.fire({
 						icon: 'success',
-						title: 'Mensaje enviado correctamente! Te respondere a la brevedad posible!',
+						title:
+							language === 'es'
+								? '¡Mensaje enviado correctamente! Te responderé a la brevedad posible!'
+								: 'Message sent successfully! I will get back to you as soon as possible!',
 						showConfirmButton: false,
 						timer: 3000,
 					});
@@ -36,11 +40,17 @@ export const FormContact = () => {
 			<div className=''>
 				<hr className='linea mx-3' />
 				<h1 className='titulocont text-center'>
-					&lt;<span className='text-white'> CONTACTO /</span>&gt;
+					&lt;
+					<span className='text-white'>
+						{' '}
+						{language === 'es' ? 'CONTACTO' : 'CONTACT'} /
+					</span>
+					&gt;
 				</h1>
 				<p className='text-center Parrafo2'>
-					Por cualquier comentario o sugerencia puedes contactarme y me
-					comunicare a la brevedad posible!.
+					{language === 'es'
+						? 'Por cualquier comentario o sugerencia puedes contactarme y me comunicaré a la brevedad posible!'
+						: 'For any comments or suggestions, you can contact me and I will get back to you as soon as possible!'}
 				</p>
 			</div>
 			<div className='contform position-relative'>
@@ -48,7 +58,9 @@ export const FormContact = () => {
 					<img src='objetocolor.png' alt='' />
 				</div>
 				<form className='cajaForm' ref={form} onSubmit={sendEmail}>
-					<label className='labelcontact'>Tu Nombre</label>
+					<label className='labelcontact'>
+						{language === 'es' ? 'Tu Nombre' : 'Your Name'}
+					</label>
 					<input
 						className='inputcontactemail'
 						type='text'
@@ -57,21 +69,35 @@ export const FormContact = () => {
 					/>
 					<label className='labelcontact'>Email</label>
 					<input
-						placeholder='Ingrese su email..'
+						placeholder={
+							language === 'es'
+								? 'Ingrese su email..'
+								: 'Enter your email..'
+						}
 						className='inputcontactemail'
 						type='email'
 						name='user_email'
 						required
 					/>
-					<label className='labelcontact'>Mensaje</label>
+					<label className='labelcontact'>
+						{language === 'es' ? 'Mensaje' : 'Message'}
+					</label>
 					<textarea
 						className='inputcontactcoment'
 						rows={7}
-						placeholder='Ingrese su mensaje..'
+						placeholder={
+							language === 'es'
+								? 'Ingrese su mensaje..'
+								: 'Enter your message..'
+						}
 						name='message'
 						required
 					/>
-					<input className='btncont' type='submit' value='Enviar' />
+					<input
+						className='btncont'
+						type='submit'
+						value={language === 'es' ? 'Enviar' : 'Send'}
+					/>
 				</form>
 
 				<div className='objeto'>
