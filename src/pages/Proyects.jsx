@@ -314,7 +314,7 @@ export const Proyects = ({ language }) => {
 								<div className='duract'>
 									<a
 										className='btnproy d-flex flex-row align-items-center text-decoration-none'
-										href='https://github.com/ofvinals/Country-API-Trivia/tree/main/PROYECTO%20COUNTRIES%20GAME'
+										href='https://github.com/ofvinals/CountryFlags-API'
 										target='_blank'>
 										<i className='icoproy fa-brands fa-square-github me-2'></i>
 										<span className='text-white'>
@@ -323,7 +323,7 @@ export const Proyects = ({ language }) => {
 									</a>
 									<a
 										className='btnproy d-flex flex-row align-items-center text-decoration-none'
-										href='https://market-artesanias.vercel.app/'
+										href='https://country-flags-api.vercel.app/'
 										target='_blank'>
 										<i className='icoproy fa-brands fa-chrome me-2'></i>
 										<span className='text-white'>
