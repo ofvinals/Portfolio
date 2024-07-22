@@ -36,15 +36,14 @@ export const Home = () => {
 				setTimeout(() => {
 					setNameIndex(0);
 					setSubtitleIndex(0);
-				}, 2000); // Espera 2 segundos antes de reiniciar la animación
+				}, 2000);
 			}
-		}, 100); // Intervalo de tiempo entre cada caracter (en milisegundos)
-
+		}, 100);
 		return () => clearInterval(animationInterval);
 	}, [nameIndex, subtitleIndex]);
 
 	return (
-		<div className='container-fluid background'>
+		<section className='container-fluid background'>
 			<Header
 				onMenuClick={scrollToSection}
 				onLanguageChange={handleLanguageChange}
@@ -109,6 +108,6 @@ export const Home = () => {
 			<Proyects id='proyectos' language={language} />
 			<FormContact id='contacto' language={language} />
 			<Footer onMenuClick={scrollToSection} language={language} />
-		</div>
+		</section>
 	);
 };

@@ -36,8 +36,8 @@ export const FormContact = ({ language }) => {
 	};
 
 	return (
-		<div className='container-fluid bodycontact background' id='contacto'>
-			<div className=''>
+		<section className='container-fluid bodycontact background' id='contacto'>
+			<section className=''>
 				<hr className='linea mx-3' />
 				<h1 className='titulocont text-center'>
 					&lt;
@@ -52,8 +52,9 @@ export const FormContact = ({ language }) => {
 						? 'Por cualquier comentario o sugerencia puedes contactarme y me comunicaré a la brevedad posible!'
 						: 'For any comments or suggestions, you can contact me and I will get back to you as soon as possible!'}
 				</p>
-			</div>
-			<div className='contform position-relative'>
+			</section>
+
+			<section className='contform position-relative'>
 				<div className='positionobjeto'>
 					<img src='objetocolor.png' alt='' />
 				</div>
@@ -118,7 +119,7 @@ export const FormContact = ({ language }) => {
 						</a>
 					</div>
 				</div>
-			</div>
-		</div>
+			</section>
+		</section>
 	);
 };
