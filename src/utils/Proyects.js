@@ -82,4 +82,22 @@ export const proyects = [
 		],
 		img: '/restoflow.png',
 	},
+	{
+		title: 'FOROMania',
+		descriptionEsp:
+			'FOROMania es un espacio donde puedes compartir tus ideas, aprender de los demás y crecer junto a la comunidad!.',
+		descriptionEng:
+			'FOROMania is a space where you can share your ideas, learn from others and grow together with the community!.',
+		url: 'https://foro-mania.vercel.app/',
+		code: 'https://github.com/JonasBusto/foro-mania',
+		languages: [
+			'ReactJS',
+			'TailwindCSS',
+			'Redux',
+			'React Prime',
+			'Firebase',
+			'RealTime Database',
+		],
+		img: '/foromania.png',
+	},
 ];
