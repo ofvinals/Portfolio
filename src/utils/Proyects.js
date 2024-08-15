@@ -16,7 +16,7 @@ export const proyects = [
 			'Proyecto para estudio juridico. Manejo de usuarios, expedientes judiciales y gestion de gastos (CRUD). Sistema de turnos online. Google Calendar API. Webscrapping en pagina de noticias judiciales',
 		descriptionEng:
 			'Project for a law firm. Management of users, legal files, and expense tracking (CRUD). Online appointment system. Google Calendar API. Web scraping on judicial news website.',
-		url: 'https://proyecto-estudio-mongo.vercel.app',
+		url: 'https://estudioposse.vercel.app/',
 		code: 'https://github.com/ofvinals/Proyecto-Estudio-Mongo',
 		languages: ['ReactJS', 'CSS', 'FireBase', 'MaterialUI', 'Express'],
 		img: '/estudio.png',
@@ -71,7 +71,7 @@ export const proyects = [
 			'RestóFLOW es la solución definitiva para agilizar la gestión de restaurantes, diseñada para mejorar la eficiencia y simplificar las operaciones.',
 		descriptionEng:
 			'RestóFLOW is the ultimate solution for streamlining restaurant management, designed to enhance efficiency and simplify operations.',
-		url: 'https://resto-flow-gestion-gastronomica.vercel.app',
+		url: 'https://restoflow.vercel.app',
 		code: 'https://github.com/ofvinals/RestoFLOW-Gestion-Gastronomica',
 		languages: [
 			'ReactJS',
