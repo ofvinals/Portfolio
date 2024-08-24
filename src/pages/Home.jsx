@@ -47,6 +47,7 @@ export const Home = () => {
 			<Header
 				onMenuClick={scrollToSection}
 				onLanguageChange={handleLanguageChange}
+				language={language}
 			/>
 			<div className='d-flex flex-column justify-content-around align-items-center '>
 				<h1 id='title-info' className='title-info'>

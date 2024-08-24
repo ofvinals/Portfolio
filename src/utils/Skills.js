@@ -26,12 +26,12 @@ export const skills = [
 			{
 				name: 'React Native',
 				iconClass: 'fa-brands fa-react',
-				learning: false,
+				learning: true,
 			},
 			{
 				name: 'Redux',
 				iconClass: 'fa-brands fa-react',
-				learning: true,
+				learning: false,
 			},
 		],
 	},
