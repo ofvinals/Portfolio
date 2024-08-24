@@ -77,7 +77,7 @@ export const Home = () => {
 					<img className='imgpersonal' src='/cv.jpg' alt='imagen' />
 				</div>
 				<div className='flex flex-column w-100 justify-content-center align-items-center'>
-					<a href='/cvpdf.pdf' download>
+					<a href='/CVOscarFriasVinals.pdf' download>
 						<button className='btnCV bg-red'>
 							{language === 'es' ? 'Descarga mi CV' : 'Download my CV'}
 						</button>
