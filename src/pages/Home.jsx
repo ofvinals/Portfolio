@@ -62,7 +62,6 @@ export const Home = () => {
 							'Fullstack DeveloperJS',
 							'MERN Stack',
 							'React Developer',
-							'Desarrollador Junior',
 							'Junior Developer',
 						]}
 						loop={0}

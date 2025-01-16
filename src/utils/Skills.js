@@ -30,7 +30,7 @@ export const skills = [
 			},
 			{
 				name: 'Redux',
-				iconClass: 'fa-brands fa-react',
+				iconClass: 'devicon-redux-original',
 				learning: false,
 			},
 		],
@@ -67,6 +67,20 @@ export const skills = [
 				iconClass: 'devicon-reactbootstrap-original',
 			},
 			{ name: 'Tailwind CSS', iconComponent: TbBrandTailwind },
+		],
+	},
+	{
+		category: 'IA <> Automation',
+		items: [
+			{
+				name: 'Gpt',
+				iconClass: 'devicon-nixos-plain',
+			},
+			{ name: 'Make', iconClass: 'fa-solid fa-lines-leaning' },
+			{
+				name: 'Zappier',
+				iconClass: 'fa-solid fa-hexagon-nodes',
+			},
 		],
 	},
 ];
